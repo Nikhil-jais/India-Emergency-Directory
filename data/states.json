@@ -1,5 +1,61 @@
 [
     {
+        "id": "up-112",
+        "name": "Emergency Response",
+        "category": "Emergency",
+        "phone": "112",
+        "icon": "🚨",
+        "description": "Emergency response service for police, fire, medical and other emergencies.",
+        "availability": "24/7",
+        "scope": "Uttar Pradesh",
+        "verified": true
+    },
+    {
+        "id": "up-police",
+        "name": "Police",
+        "category": "Police",
+        "phone": "112",
+        "icon": "🚔",
+        "description": "Emergency police assistance in Uttar Pradesh.",
+        "availability": "24/7",
+        "scope": "Uttar Pradesh",
+        "verified": true
+    },
+    {
+        "id": "up-fire",
+        "name": "Fire & Rescue",
+        "category": "Fire",
+        "phone": "101",
+        "icon": "🔥",
+        "description": "Fire and rescue emergency assistance.",
+        "availability": "24/7",
+        "scope": "Uttar Pradesh",
+        "verified": true
+    },
+    {
+        "id": "up-ambulance",
+        "name": "Ambulance",
+        "category": "Medical",
+        "phone": "108",
+        "icon": "🚑",
+        "description": "Emergency ambulance service.",
+        "availability": "24/7",
+        "scope": "Uttar Pradesh",
+        "verified": true
+    },
+    {
+        "id": "up-child",
+        "name": "Child Helpline",
+        "category": "Children",
+        "phone": "1098",
+        "icon": "👶",
+        "description": "Assistance and protection services for children.",
+        "availability": "24/7",
+        "scope": "Uttar Pradesh",
+        "verified": true
+    }
+][
+    {
         "id": "andhra-pradesh",
         "name": "Andhra Pradesh",
         "type": "State"
