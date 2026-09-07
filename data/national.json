@@ -1,26 +1,157 @@
 [
     {
+        "id": "national-112",
         "name": "Emergency Response",
         "category": "Emergency",
         "phone": "112",
-        "icon": "🚨",
-        "description": "Integrated emergency response service",
-        "available": "24/7"
+        "description": "Integrated emergency response service for police, fire, health and other emergencies.",
+        "availability": "24/7",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
     },
+
     {
-        "name": "Police",
-        "category": "Police",
-        "phone": "112",
-        "icon": "🚔",
-        "description": "Emergency police assistance",
-        "available": "24/7"
+        "id": "national-102",
+        "name": "National Ambulance Service",
+        "category": "Medical",
+        "phone": "102",
+        "description": "National ambulance service.",
+        "availability": "24/7",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
     },
+
     {
-        "name": "Cyber Crime",
+        "id": "national-1930",
+        "name": "Cyber Crime Helpline",
         "category": "Cyber Crime",
         "phone": "1930",
-        "icon": "💻",
-        "description": "Report cyber financial fraud and cybercrime",
-        "available": "24/7"
+        "description": "Helpline for reporting cybercrime and cyber financial fraud.",
+        "availability": "24/7",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1906",
+        "name": "LPG Leak Helpline",
+        "category": "Emergency",
+        "phone": "1906",
+        "description": "Helpline for reporting LPG gas leaks.",
+        "availability": "24/7",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1915",
+        "name": "National Consumer Helpline",
+        "category": "Consumer",
+        "phone": "1915",
+        "description": "Consumer assistance and grievance support.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1073",
+        "name": "Road Accident Helpline",
+        "category": "Road Safety",
+        "phone": "1073",
+        "description": "Helpline for road accident assistance.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1933",
+        "name": "MANAS National Narcotics Helpline",
+        "category": "Narcotics",
+        "phone": "1933",
+        "description": "National helpline related to narcotics and drug-related assistance.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1098",
+        "name": "Child Helpline",
+        "category": "Children",
+        "phone": "1098",
+        "description": "Helpline for children requiring assistance and protection.",
+        "availability": "24/7",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-14567",
+        "name": "Senior Citizens Helpline",
+        "category": "Senior Citizens",
+        "phone": "14567",
+        "description": "Helpline for senior citizens.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-14456",
+        "name": "Persons with Disabilities Helpline",
+        "category": "Disability Support",
+        "phone": "14456",
+        "description": "Helpline for persons with disabilities.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-139",
+        "name": "Railway Security / Medical Assistance",
+        "category": "Railways",
+        "phone": "139",
+        "description": "Railway assistance including security and medical assistance.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1947",
+        "name": "UIDAI Helpline",
+        "category": "Government Services",
+        "phone": "1947",
+        "description": "UIDAI Aadhaar-related assistance.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/",
+        "verified": true,
+        "lastVerified": "2026-09-07"
     }
 ]
