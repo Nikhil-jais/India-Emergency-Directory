@@ -2,79 +2,764 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>India Emergency Directory</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="India Emergency Directory — Find verified emergency, government and public-service contacts across India."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b3d2e"
+    >
+
+    <title>
+        India Emergency Directory | Emergency & Government Services
+    </title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
 
-        <div class="logo">
-            🚨 India Emergency Directory
+<!-- =========================================================
+     TOP GOVERNMENT-STYLE INFORMATION BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <div class="top-bar-inner">
+
+        <div class="top-bar-left">
+
+            <span class="india-mark">
+                🇮🇳
+            </span>
+
+            <span>
+                Citizen Services • Emergency Assistance • Public Information
+            </span>
+
         </div>
 
-        <p>
-            Emergency & Public Services
-        </p>
 
-    </header>
+        <div class="top-bar-right">
+
+            <span class="status-dot"></span>
+
+            <span>
+                Directory Information
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
 
 
-    <!-- MAIN -->
-    <main class="container">
+
+<!-- =========================================================
+     MAIN HEADER
+========================================================= -->
+
+<header class="header">
+
+    <div class="header-inner">
 
 
-        <!-- LOCATION SECTION -->
-        <section class="location-section">
+        <!-- BRAND -->
 
-            <div class="hero-badge">
-                🇮🇳 INDIA
+        <a
+            href="#"
+            class="brand"
+            aria-label="India Emergency Directory Home"
+        >
+
+            <div class="brand-emblem">
+                🇮🇳
             </div>
 
+
+            <div class="brand-text">
+
+                <strong>
+                    India Emergency Directory
+                </strong>
+
+                <span>
+                    Emergency • Government • Public Services
+                </span>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="main-nav"
+            aria-label="Main navigation"
+        >
+
+            <a
+                href="#home"
+                class="nav-link active"
+            >
+                Home
+            </a>
+
+            <a
+                href="#emergency"
+                class="nav-link"
+            >
+                Emergency
+            </a>
+
+            <a
+                href="#directory"
+                class="nav-link"
+            >
+                Directory
+            </a>
+
+            <a
+                href="#states"
+                class="nav-link"
+            >
+                States & UTs
+            </a>
+
+            <a
+                href="#about"
+                class="nav-link"
+            >
+                About
+            </a>
+
+        </nav>
+
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+            id="menuButton"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <nav
+        id="mobileNav"
+        class="mobile-nav"
+        aria-label="Mobile navigation"
+    >
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#emergency">
+            Emergency
+        </a>
+
+        <a href="#directory">
+            Directory
+        </a>
+
+        <a href="#states">
+            States & UTs
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================= -->
+
+<main id="home">
+
+
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section class="hero">
+
+        <div class="hero-background"></div>
+
+
+        <div class="hero-content">
+
+
+            <div class="hero-badge">
+
+                <span>
+                    🇮🇳
+                </span>
+
+                <span>
+                    CITIZEN SERVICE DIRECTORY
+                </span>
+
+            </div>
+
+
+
             <h1>
-                Emergency & Government Contacts
+
+                Emergency help,
+                <span>
+                    when you need it.
+                </span>
+
             </h1>
 
-            <p>
-                Find important emergency, government and public-service
-                helplines quickly.
+
+
+            <p class="hero-description">
+
+                Find emergency numbers, government helplines
+                and public-service contacts across India —
+                organized in one accessible directory.
+
             </p>
 
 
-            <!-- STATE SELECTOR -->
-            <select id="stateSelect">
 
-                <option value="">
-                    Select State / Union Territory
-                </option>
+            <!-- HERO SEARCH -->
 
-            </select>
+            <div class="hero-search">
 
-        </section>
+                <span class="hero-search-icon">
+                    🔍
+                </span>
+
+                <input
+                    type="search"
+                    id="heroSearchInput"
+                    placeholder="Search police, ambulance, cyber crime, passport..."
+                    autocomplete="off"
+                    aria-label="Search emergency and government contacts"
+                >
+
+                <button
+                    id="heroSearchButton"
+                    type="button"
+                >
+                    Search
+                </button>
+
+            </div>
 
 
 
-        <!-- DIRECTORY -->
-        <section class="directory">
+            <!-- QUICK SEARCH SUGGESTIONS -->
+
+            <div class="search-suggestions">
+
+                <span>
+                    Popular:
+                </span>
+
+                <button
+                    type="button"
+                    class="suggestion-chip"
+                    data-search="police"
+                >
+                    Police
+                </button>
+
+                <button
+                    type="button"
+                    class="suggestion-chip"
+                    data-search="ambulance"
+                >
+                    Ambulance
+                </button>
+
+                <button
+                    type="button"
+                    class="suggestion-chip"
+                    data-search="cyber"
+                >
+                    Cyber Crime
+                </button>
+
+                <button
+                    type="button"
+                    class="suggestion-chip"
+                    data-search="women"
+                >
+                    Women
+                </button>
+
+                <button
+                    type="button"
+                    class="suggestion-chip"
+                    data-search="railway"
+                >
+                    Railways
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
-            <!-- DIRECTORY HEADER -->
-            <div class="directory-top">
+
+    <!-- =====================================================
+         EMERGENCY QUICK ACCESS
+    ====================================================== -->
+
+    <section
+        id="emergency"
+        class="emergency-section"
+    >
+
+        <div class="section-container">
+
+
+            <div class="emergency-heading">
 
                 <div>
 
-                    <span class="directory-label">
-                        DIRECTORY
+                    <span class="section-kicker emergency-kicker">
+                        EMERGENCY ACCESS
                     </span>
 
                     <h2>
-                        Available Services
+                        Need immediate help?
+                    </h2>
+
+                    <p>
+                        For emergencies, use the appropriate emergency
+                        service or the integrated emergency number 112.
+                    </p>
+
+                </div>
+
+
+                <div class="emergency-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        24/7 Emergency Support
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 112 FEATURE CARD -->
+
+            <div class="primary-emergency-card">
+
+                <div class="emergency-icon">
+                    🚨
+                </div>
+
+
+                <div class="emergency-main">
+
+                    <span class="emergency-label">
+                        INTEGRATED EMERGENCY RESPONSE
+                    </span>
+
+                    <h3>
+                        Emergency Response Service
+                    </h3>
+
+                    <p>
+                        Police • Fire • Medical • Rescue • Other Emergencies
+                    </p>
+
+                </div>
+
+
+                <div class="emergency-number">
+
+                    <span>
+                        112
+                    </span>
+
+                    <small>
+                        Available 24/7
+                    </small>
+
+                </div>
+
+
+                <a
+                    href="tel:112"
+                    class="emergency-call-button"
+                    aria-label="Call emergency number 112"
+                >
+                    📞 Call 112
+                </a>
+
+            </div>
+
+
+
+            <!-- QUICK EMERGENCY SERVICES -->
+
+            <div class="quick-emergency-grid">
+
+
+                <a
+                    href="tel:100"
+                    class="quick-emergency-card police-card"
+                >
+
+                    <div class="quick-icon">
+                        🚔
+                    </div>
+
+                    <div>
+                        <strong>
+                            Police
+                        </strong>
+
+                        <span>
+                            Emergency assistance
+                        </span>
+                    </div>
+
+                    <b>
+                        100
+                    </b>
+
+                </a>
+
+
+
+                <a
+                    href="tel:101"
+                    class="quick-emergency-card fire-card"
+                >
+
+                    <div class="quick-icon">
+                        🚒
+                    </div>
+
+                    <div>
+                        <strong>
+                            Fire & Rescue
+                        </strong>
+
+                        <span>
+                            Fire emergency
+                        </span>
+                    </div>
+
+                    <b>
+                        101
+                    </b>
+
+                </a>
+
+
+
+                <a
+                    href="tel:102"
+                    class="quick-emergency-card medical-card"
+                >
+
+                    <div class="quick-icon">
+                        🚑
+                    </div>
+
+                    <div>
+                        <strong>
+                            Ambulance
+                        </strong>
+
+                        <span>
+                            Medical emergency
+                        </span>
+                    </div>
+
+                    <b>
+                        102
+                    </b>
+
+                </a>
+
+
+
+                <a
+                    href="tel:1930"
+                    class="quick-emergency-card cyber-card"
+                >
+
+                    <div class="quick-icon">
+                        🛡️
+                    </div>
+
+                    <div>
+                        <strong>
+                            Cyber Crime
+                        </strong>
+
+                        <span>
+                            Cyber & financial fraud
+                        </span>
+                    </div>
+
+                    <b>
+                        1930
+                    </b>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DIRECTORY STATISTICS
+    ====================================================== -->
+
+    <section class="stats-section">
+
+        <div class="section-container">
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📞
+                    </div>
+
+                    <div>
+
+                        <strong id="statContacts">
+                            —
+                        </strong>
+
+                        <span>
+                            Verified Contacts
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🗺️
+                    </div>
+
+                    <div>
+
+                        <strong id="statStates">
+                            36
+                        </strong>
+
+                        <span>
+                            States & UTs
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🏛️
+                    </div>
+
+                    <div>
+
+                        <strong id="statCategories">
+                            —
+                        </strong>
+
+                        <span>
+                            Service Categories
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🕐
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            24/7
+                        </strong>
+
+                        <span>
+                            Emergency Access
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LOCATION / STATE SELECTOR
+    ====================================================== -->
+
+    <section
+        id="states"
+        class="location-section"
+    >
+
+        <div class="section-container">
+
+
+            <div class="location-panel">
+
+
+                <div class="location-content">
+
+                    <span class="section-kicker">
+                        FIND SERVICES BY LOCATION
+                    </span>
+
+                    <h2>
+                        Select your State or Union Territory
+                    </h2>
+
+                    <p>
+                        Choose your location to explore relevant
+                        government and public-service information.
+                    </p>
+
+                </div>
+
+
+
+                <div class="location-selector-area">
+
+                    <label
+                        for="stateSelect"
+                        class="visually-hidden"
+                    >
+                        Select State or Union Territory
+                    </label>
+
+                    <select id="stateSelect">
+
+                        <option value="">
+                            Select State / Union Territory
+                        </option>
+
+                    </select>
+
+
+                    <div class="selected-location">
+
+                        <span class="location-pin">
+                            📍
+                        </span>
+
+                        <span id="selectedStateText">
+                            No location selected
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DIRECTORY
+    ====================================================== -->
+
+    <section
+        id="directory"
+        class="directory"
+    >
+
+        <div class="section-container">
+
+
+            <!-- DIRECTORY HEADER -->
+
+            <div class="directory-header">
+
+
+                <div class="directory-title">
+
+                    <span class="section-kicker">
+                        OFFICIAL SERVICE DIRECTORY
+                    </span>
+
+                    <h2>
+                        Explore available services
                     </h2>
 
                     <p id="contactCount">
@@ -84,19 +769,30 @@
                 </div>
 
 
-                <!-- SEARCH -->
-                <div class="search-wrapper">
 
-                    <span class="search-icon">
+                <!-- DIRECTORY SEARCH -->
+
+                <div class="directory-search">
+
+                    <span>
                         🔍
                     </span>
 
                     <input
-                        type="text"
+                        type="search"
                         id="searchInput"
-                        placeholder="Search contacts..."
+                        placeholder="Search services or contact numbers..."
                         autocomplete="off"
+                        aria-label="Search directory"
                     >
+
+                    <button
+                        id="clearSearch"
+                        type="button"
+                        aria-label="Clear search"
+                    >
+                        ✕
+                    </button>
 
                 </div>
 
@@ -104,183 +800,659 @@
 
 
 
-            <!-- CATEGORY FILTERS -->
-            <div class="category-wrapper">
+            <!-- =================================================
+                 CATEGORY FILTERS
+            ================================================== -->
 
-                <button
-                    class="category-button active"
-                    data-category="All"
-                >
-                    📋 All
-                </button>
+            <div
+                class="category-section"
+                aria-label="Service categories"
+            >
 
+                <div class="category-heading">
 
-                <button
-                    class="category-button"
-                    data-category="Emergency"
-                >
-                    🚨 Emergency
-                </button>
+                    <span>
+                        Browse by service
+                    </span>
 
+                    <button
+                        id="clearFilters"
+                        type="button"
+                    >
+                        Clear filters
+                    </button>
 
-                <button
-                    class="category-button"
-                    data-category="Police"
-                >
-                    🚔 Police
-                </button>
+                </div>
 
 
-                <button
-                    class="category-button"
-                    data-category="Medical"
-                >
-                    🚑 Medical
-                </button>
+
+                <div class="category-wrapper">
 
 
-                <button
-                    class="category-button"
-                    data-category="Fire"
-                >
-                    🔥 Fire
-                </button>
+                    <button
+                        class="category-button active"
+                        data-category="All"
+                        type="button"
+                    >
+                        <span>▦</span>
+                        All Services
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Women"
-                >
-                    👩 Women
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Emergency"
+                        type="button"
+                    >
+                        <span>🚨</span>
+                        Emergency
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Children"
-                >
-                    👶 Children
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Police"
+                        type="button"
+                    >
+                        <span>🚔</span>
+                        Police
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Cyber Crime"
-                >
-                    💻 Cyber
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Medical"
+                        type="button"
+                    >
+                        <span>🚑</span>
+                        Medical
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Government Services"
-                >
-                    🏛️ Government
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Fire"
+                        type="button"
+                    >
+                        <span>🚒</span>
+                        Fire & Rescue
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Railways"
-                >
-                    🚆 Railways
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Women"
+                        type="button"
+                    >
+                        <span>👩</span>
+                        Women
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Consumer"
-                >
-                    ⚖️ Consumer
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Children"
+                        type="button"
+                    >
+                        <span>👶</span>
+                        Children
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Disaster"
-                >
-                    🌊 Disaster
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Cyber Crime"
+                        type="button"
+                    >
+                        <span>🛡️</span>
+                        Cyber Crime
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Senior Citizens"
-                >
-                    👴 Senior Citizens
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Government Services"
+                        type="button"
+                    >
+                        <span>🏛️</span>
+                        Government
+                    </button>
 
 
-                <button
-                    class="category-button"
-                    data-category="Disability Support"
-                >
-                    ♿ Disability
-                </button>
+                    <button
+                        class="category-button"
+                        data-category="Railways"
+                        type="button"
+                    >
+                        <span>🚆</span>
+                        Railways
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Consumer"
+                        type="button"
+                    >
+                        <span>⚖️</span>
+                        Consumer
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Disaster Management"
+                        type="button"
+                    >
+                        <span>🌊</span>
+                        Disaster
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Senior Citizens"
+                        type="button"
+                    >
+                        <span>👴</span>
+                        Senior Citizens
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Disability Support"
+                        type="button"
+                    >
+                        <span>♿</span>
+                        Disability
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Passport & Travel"
+                        type="button"
+                    >
+                        <span>🛂</span>
+                        Passport & Travel
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Education"
+                        type="button"
+                    >
+                        <span>🎓</span>
+                        Education
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Tourism"
+                        type="button"
+                    >
+                        <span>🧳</span>
+                        Tourism
+                    </button>
+
+
+                    <button
+                        class="category-button"
+                        data-category="Food Safety"
+                        type="button"
+                    >
+                        <span>🍱</span>
+                        Food Safety
+                    </button>
+
+                </div>
 
             </div>
 
 
 
-            <!-- CONTACT CARDS -->
-            <div id="contactsContainer">
+            <!-- =================================================
+                 ACTIVE FILTER / RESULT INFORMATION
+            ================================================== -->
 
-                <div class="empty-message">
+            <div class="results-toolbar">
+
+
+                <div class="results-info">
+
+                    <span class="results-icon">
+                        📋
+                    </span>
+
+                    <span id="activeFilterText">
+                        Showing all available services
+                    </span>
+
+                </div>
+
+
+
+                <div class="results-actions">
+
+                    <button
+                        id="sortButton"
+                        type="button"
+                    >
+                        ↕ Sort
+                    </button>
+
+                    <button
+                        id="viewToggle"
+                        type="button"
+                        aria-label="Toggle directory view"
+                    >
+                        ▦
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CONTACT CARDS
+            ================================================== -->
+
+            <div
+                id="contactsContainer"
+                class="contacts-container"
+            >
+
+                <div class="empty-message loading-state">
+
+                    <div class="loading-spinner"></div>
 
                     <h3>
-                        Loading contacts...
+                        Loading directory
                     </h3>
 
                     <p>
-                        Please wait.
+                        Preparing emergency and government services...
                     </p>
 
                 </div>
 
             </div>
 
-        </section>
-
-    </main>
 
 
+            <!-- =================================================
+                 NO RESULTS STATE
+            ================================================== -->
 
-    <!-- FOOTER -->
-  <footer class="site-footer">
+            <div
+                id="noResults"
+                class="empty-message no-results"
+                hidden
+            >
 
-    <div class="footer-brand">
-        🇮🇳 TN India Emergency Directory
+                <div class="empty-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    No services found
+                </h3>
+
+                <p>
+                    Try another search term or remove a category filter.
+                </p>
+
+                <button
+                    id="resetSearch"
+                    type="button"
+                >
+                    Reset Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         STATE / GOVERNMENT DIRECTORY INFORMATION
+    ====================================================== -->
+
+    <section class="government-section">
+
+        <div class="section-container">
+
+
+            <div class="government-panel">
+
+
+                <div class="government-icon">
+                    🏛️
+                </div>
+
+
+                <div class="government-content">
+
+                    <span class="section-kicker">
+                        GOVERNMENT DIRECTORY
+                    </span>
+
+                    <h2>
+                        Find government services by State & UT
+                    </h2>
+
+                    <p>
+                        Explore state-level government departments,
+                        public services, district information and
+                        other citizen resources.
+                    </p>
+
+
+                    <div class="government-features">
+
+                        <span>
+                            ✓ States
+                        </span>
+
+                        <span>
+                            ✓ Union Territories
+                        </span>
+
+                        <span>
+                            ✓ Districts
+                        </span>
+
+                        <span>
+                            ✓ Departments
+                        </span>
+
+                        <span>
+                            ✓ Public Services
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="exploreStatesButton"
+                    type="button"
+                    class="government-button"
+                >
+                    Explore States →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SAFETY / VERIFICATION NOTICE
+    ====================================================== -->
+
+    <section
+        id="about"
+        class="notice-section"
+    >
+
+        <div class="section-container">
+
+
+            <div class="verification-notice">
+
+
+                <div class="notice-icon">
+                    ✓
+                </div>
+
+
+                <div class="notice-content">
+
+                    <h3>
+                        Important information
+                    </h3>
+
+                    <p>
+                        This directory is designed to help citizens
+                        find important emergency and public-service
+                        contacts quickly. Always verify critical
+                        information with the relevant official
+                        government authority before relying on it.
+                    </p>
+
+                    <div class="notice-meta">
+
+                        <span>
+                            🔎 Information is periodically reviewed
+                        </span>
+
+                        <span>
+                            🏛️ Sources are linked where available
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+    <div class="footer-main">
+
+        <div class="footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand-column">
+
+                <div class="footer-brand">
+
+                    <span class="footer-brand-icon">
+                        🇮🇳
+                    </span>
+
+                    <span>
+                        India Emergency Directory
+                    </span>
+
+                </div>
+
+
+                <p>
+                    A citizen-focused directory for emergency,
+                    government and public-service contacts across India.
+                </p>
+
+
+                <div class="footer-status">
+
+                    <span class="status-dot"></span>
+
+                    Directory information
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Directory
+                </h3>
+
+                <a href="#emergency">
+                    Emergency Services
+                </a>
+
+                <a href="#directory">
+                    All Services
+                </a>
+
+                <a href="#states">
+                    States & UTs
+                </a>
+
+                <a href="#about">
+                    About Directory
+                </a>
+
+            </div>
+
+
+
+            <!-- SERVICE AREAS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Service Areas
+                </h3>
+
+                <a href="#directory">
+                    Police
+                </a>
+
+                <a href="#directory">
+                    Medical
+                </a>
+
+                <a href="#directory">
+                    Cyber Crime
+                </a>
+
+                <a href="#directory">
+                    Women & Children
+                </a>
+
+            </div>
+
+
+
+            <!-- INFORMATION -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+                <a href="#about">
+                    Verification Notice
+                </a>
+
+                <a href="#about">
+                    Data Sources
+                </a>
+
+                <a href="#about">
+                    Public Service Information
+                </a>
+
+                <a href="#about">
+                    Citizen Resources
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <p class="footer-description">
-        A citizen-focused directory for emergency,<br>
-        government and public-service contacts.
-    </p>
 
-    <p class="footer-warning">
-        Always verify important information with<br>
-        the relevant official government authority.
-    </p>
 
-    <div class="footer-line"></div>
+    <!-- FOOTER BOTTOM -->
 
-    <p class="footer-copyright">
-        © 2026 TN India Emergency Directory
-    </p>
+    <div class="footer-bottom">
 
-    <p class="footer-made">
-        Made with <span>❤️</span> by <strong>Nikhil</strong>
-    </p>
+        <div class="footer-bottom-inner">
 
-    <p class="footer-tagline">
-        Built with care for citizens.
-    </p>
+
+            <div>
+
+                <p class="footer-copyright">
+                    © 2026 India Emergency Directory
+                </p>
+
+                <p class="footer-tagline">
+                    Built with care for citizens.
+                </p>
+
+            </div>
+
+
+            <div class="footer-credit">
+
+                Made with
+                <span>❤️</span>
+                by
+                <strong>
+                    Nikhil
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </footer>
 
 
 
-    <script src="script.js"></script>
+<!-- =========================================================
+     BACK TO TOP BUTTON
+========================================================= -->
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    type="button"
+    aria-label="Back to top"
+>
+    ↑
+</button>
+
+
+
+<!-- =========================================================
+     SCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
 
 </body>
 
