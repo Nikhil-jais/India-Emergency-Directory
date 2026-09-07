@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>India Emergency Directory</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">🚨 Emergency Directory</div>
+
+        <p>
+            Important emergency and government contacts for India
+        </p>
+    </header>
+
+
+    <main class="container">
+
+        <section class="location-section">
+
+            <h1>🇮🇳 India</h1>
+
+            <p>
+                Select your state or union territory
+            </p>
+
+            <select id="stateSelect">
+                <option value="">Select State / UT</option>
+            </select>
+
+        </section>
+
+
+        <section class="directory">
+
+            <div class="section-heading">
+                <h2>Emergency & Government Contacts</h2>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search contacts..."
+                >
+            </div>
+
+
+            <div id="contactsContainer">
+
+                <div class="empty-message">
+                    Select a state to view contacts.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 India Emergency Directory
+        </p>
+
+        <p>
+            Information should be verified with official government sources.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
