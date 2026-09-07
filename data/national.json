@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Emergency Response",
+        "category": "Emergency",
+        "phone": "112",
+        "icon": "🚨",
+        "description": "Integrated emergency response service",
+        "available": "24/7"
+    },
+    {
+        "name": "Police",
+        "category": "Police",
+        "phone": "112",
+        "icon": "🚔",
+        "description": "Emergency police assistance",
+        "available": "24/7"
+    },
+    {
+        "name": "Cyber Crime",
+        "category": "Cyber Crime",
+        "phone": "1930",
+        "icon": "💻",
+        "description": "Report cyber financial fraud and cybercrime",
+        "available": "24/7"
+    }
+]
