@@ -1,12 +1,12 @@
-/* ==========================================
+/* =========================================================
    INDIA EMERGENCY DIRECTORY
-   PROFESSIONAL UI
-========================================== */
+   INDIAN PUBLIC-SERVICE INSPIRED THEME
+========================================================= */
 
 
-/* ==========================================
+/* =========================================================
    RESET
-========================================== */
+========================================================= */
 
 * {
     margin: 0;
@@ -15,33 +15,50 @@
 }
 
 
-/* ==========================================
-   VARIABLES
-========================================== */
+/* =========================================================
+   DESIGN SYSTEM
+========================================================= */
 
 :root {
 
-    --primary: #0b3d91;
-    --primary-dark: #082c6b;
+    /* Indian-inspired palette */
+    --navy: #12345b;
+    --navy-dark: #0b2745;
+    --navy-light: #1e527f;
 
-    --danger: #c62828;
-    --success: #16803c;
+    --saffron: #e87518;
+    --saffron-light: #fff1e5;
 
-    --text: #172033;
-    --muted: #687386;
+    --green: #16834b;
+    --green-dark: #0d6338;
+    --green-light: #eaf7ef;
 
-    --border: #e4e8ef;
+    --chakra: #1f4e79;
 
-    --background: #f5f7fb;
+    /* Backgrounds */
+    --background: #f7f5ef;
+    --surface: #ffffff;
+    --surface-soft: #fbfaf6;
 
-    --white: #ffffff;
+    /* Text */
+    --text: #1b2733;
+    --muted: #697586;
+    --light-text: #8a94a3;
+
+    /* Borders */
+    --border: #e2ded4;
+    --border-light: #eeeae2;
+
+    /* Status */
+    --danger: #b42318;
+    --danger-light: #fff0ee;
 
 }
 
 
-/* ==========================================
+/* =========================================================
    BODY
-========================================== */
+========================================================= */
 
 html {
     scroll-behavior: smooth;
@@ -51,6 +68,7 @@ html {
 body {
 
     font-family:
+        "Segoe UI",
         Arial,
         Helvetica,
         sans-serif;
@@ -64,12 +82,84 @@ body {
     line-height:
         1.6;
 
+    min-height:
+        100vh;
+
 }
 
 
-/* ==========================================
+/* =========================================================
+   SUBTLE ASHOKA-CHAKRA BACKGROUND PATTERN
+========================================================= */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 650px;
+    height: 650px;
+
+    right: -250px;
+    top: 100px;
+
+    border:
+        1px solid rgba(31, 78, 121, 0.055);
+
+    border-radius:
+        50%;
+
+    box-shadow:
+        0 0 0 35px rgba(31, 78, 121, 0.025),
+        0 0 0 70px rgba(31, 78, 121, 0.02),
+        0 0 0 105px rgba(31, 78, 121, 0.015);
+
+    pointer-events:
+        none;
+
+    z-index:
+        -1;
+
+}
+
+
+/* =========================================================
+   TOP TRICOLOUR LINE
+========================================================= */
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background:
+        linear-gradient(
+            to right,
+            var(--saffron) 0%,
+            var(--saffron) 33%,
+            white 33%,
+            white 66%,
+            var(--green) 66%,
+            var(--green) 100%
+        );
+
+    z-index:
+        9999;
+
+}
+
+
+/* =========================================================
    HEADER
-========================================== */
+========================================================= */
 
 .header {
 
@@ -79,29 +169,35 @@ body {
     border-bottom:
         1px solid var(--border);
 
+    min-height:
+        76px;
+
     padding:
-        17px 6%;
+        0 6%;
 
     display:
         flex;
 
-    justify-content:
-        space-between;
-
     align-items:
         center;
 
+    justify-content:
+        space-between;
+
     gap:
-        20px;
+        30px;
 
     position:
         sticky;
 
     top:
-        0;
+        4px;
 
     z-index:
         100;
+
+    box-shadow:
+        0 3px 18px rgba(31, 42, 55, 0.04);
 
     backdrop-filter:
         blur(12px);
@@ -109,16 +205,43 @@ body {
 }
 
 
+/* =========================================================
+   HEADER LOGO
+========================================================= */
+
 .logo {
 
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
     color:
-        var(--primary);
+        var(--navy);
 
     font-size:
-        21px;
+        20px;
 
     font-weight:
-        800;
+        750;
+
+    letter-spacing:
+        -0.2px;
+
+}
+
+
+.logo::before {
+
+    content:
+        "🇮🇳";
+
+    font-size:
+        27px;
 
 }
 
@@ -129,89 +252,179 @@ body {
         var(--muted);
 
     font-size:
-        14px;
+        13px;
+
+    font-weight:
+        500;
 
 }
 
 
-/* ==========================================
-   MAIN CONTAINER
-========================================== */
+/* =========================================================
+   MAIN
+========================================================= */
 
 .container {
 
-    max-width:
-        1250px;
+    width:
+        min(1240px, 92%);
 
     margin:
         auto;
 
     padding:
-        45px 20px 60px;
+        42px 0 65px;
 
 }
 
 
-/* ==========================================
-   HERO
-========================================== */
+/* =========================================================
+   HERO / LOCATION
+========================================================= */
 
 .location-section {
 
-    background:
-        linear-gradient(
-            135deg,
-            #082c6b,
-            #0b3d91,
-            #1764c0
-        );
+    position:
+        relative;
+
+    overflow:
+        hidden;
 
     color:
         white;
 
     padding:
-        65px 30px;
+        62px 35px;
 
     border-radius:
-        24px;
+        18px;
 
     text-align:
         center;
 
+    background:
+        linear-gradient(
+            135deg,
+            #0b2745 0%,
+            #12345b 52%,
+            #1c4d77 100%
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
     box-shadow:
-        0 18px 45px rgba(11, 61, 145, 0.22);
+        0 20px 45px rgba(11, 39, 69, 0.18);
 
     animation:
-        fadeUp 0.7s ease;
+        heroAppear 0.7s ease;
 
 }
 
 
-.hero-badge {
+/* decorative chakra */
 
-    display:
-        inline-block;
+.location-section::before {
 
-    padding:
-        7px 14px;
+    content:
+        "☸";
 
-    border:
-        1px solid rgba(255,255,255,0.3);
+    position:
+        absolute;
+
+    right:
+        -25px;
+
+    top:
+        -70px;
+
+    font-size:
+        280px;
+
+    line-height:
+        1;
+
+    color:
+        rgba(255,255,255,0.035);
+
+    transform:
+        rotate(8deg);
+
+    pointer-events:
+        none;
+
+}
+
+
+/* saffron accent */
+
+.location-section::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        120px;
+
+    height:
+        4px;
+
+    left:
+        50%;
+
+    bottom:
+        0;
+
+    transform:
+        translateX(-50%);
 
     background:
-        rgba(255,255,255,0.1);
+        var(--saffron);
+
+}
+
+
+/* =========================================================
+   HERO BADGE
+========================================================= */
+
+.hero-badge {
+
+    position:
+        relative;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    padding:
+        7px 15px;
+
+    border:
+        1px solid rgba(255,255,255,0.2);
+
+    background:
+        rgba(255,255,255,0.07);
 
     border-radius:
         30px;
 
     font-size:
-        12px;
+        11px;
 
     font-weight:
-        700;
+        750;
 
     letter-spacing:
-        1px;
+        1.5px;
 
     margin-bottom:
         18px;
@@ -219,63 +432,88 @@ body {
 }
 
 
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
 .location-section h1 {
 
+    position:
+        relative;
+
     font-size:
-        clamp(28px, 5vw, 42px);
+        clamp(29px, 5vw, 43px);
+
+    font-weight:
+        750;
+
+    letter-spacing:
+        -0.8px;
 
     line-height:
         1.2;
 
     margin-bottom:
-        12px;
+        13px;
 
 }
 
 
 .location-section p {
 
+    position:
+        relative;
+
     max-width:
-        650px;
+        690px;
 
     margin:
-        auto auto 28px;
+        0 auto 29px;
 
-    opacity:
-        0.9;
+    color:
+        rgba(255,255,255,0.84);
+
+    font-size:
+        15px;
 
 }
 
 
-/* ==========================================
+/* =========================================================
    STATE SELECT
-========================================== */
+========================================================= */
 
 select {
+
+    position:
+        relative;
 
     width:
         100%;
 
     max-width:
-        540px;
+        550px;
 
     padding:
-        16px 18px;
+        16px 19px;
 
     border:
-        none;
+        1px solid rgba(255,255,255,0.15);
 
     border-radius:
-        12px;
-
-    font-size:
-        16px;
+        10px;
 
     background:
         white;
 
     color:
         var(--text);
+
+    font-size:
+        15px;
+
+    font-weight:
+        600;
 
     outline:
         none;
@@ -284,10 +522,10 @@ select {
         pointer;
 
     box-shadow:
-        0 8px 20px rgba(0,0,0,0.12);
+        0 8px 25px rgba(0,0,0,0.16);
 
     transition:
-        0.25s;
+        all 0.25s ease;
 
 }
 
@@ -297,39 +535,56 @@ select:hover {
     transform:
         translateY(-2px);
 
+    box-shadow:
+        0 12px 28px rgba(0,0,0,0.2);
+
 }
 
 
-/* ==========================================
+select:focus {
+
+    border-color:
+        var(--saffron);
+
+    box-shadow:
+        0 0 0 4px rgba(232,117,24,0.18);
+
+}
+
+
+/* =========================================================
    DIRECTORY
-========================================== */
+========================================================= */
 
 .directory {
 
     margin-top:
-        35px;
+        32px;
+
+    padding:
+        32px;
 
     background:
-        var(--white);
+        rgba(255,255,255,0.95);
 
     border:
         1px solid var(--border);
 
     border-radius:
-        20px;
+        17px;
 
-    padding:
-        30px;
+    box-shadow:
+        0 8px 28px rgba(28, 39, 52, 0.045);
 
     animation:
-        fadeUp 0.8s ease;
+        contentAppear 0.8s ease;
 
 }
 
 
-/* ==========================================
+/* =========================================================
    DIRECTORY TOP
-========================================== */
+========================================================= */
 
 .directory-top {
 
@@ -345,36 +600,51 @@ select:hover {
     gap:
         25px;
 
-    margin-bottom:
+    padding-bottom:
         25px;
+
+    border-bottom:
+        1px solid var(--border-light);
 
 }
 
 
 .directory-label {
 
+    display:
+        inline-block;
+
     color:
-        var(--primary);
+        var(--saffron);
 
     font-size:
-        11px;
+        10px;
 
     font-weight:
         800;
 
     letter-spacing:
-        1.5px;
+        1.7px;
+
+    margin-bottom:
+        3px;
 
 }
 
 
 .directory-top h2 {
 
+    color:
+        var(--navy);
+
     font-size:
         26px;
 
-    margin:
-        3px 0;
+    font-weight:
+        720;
+
+    letter-spacing:
+        -0.4px;
 
 }
 
@@ -385,14 +655,17 @@ select:hover {
         var(--muted);
 
     font-size:
-        14px;
+        13px;
+
+    margin-top:
+        2px;
 
 }
 
 
-/* ==========================================
+/* =========================================================
    SEARCH
-========================================== */
+========================================================= */
 
 .search-wrapper {
 
@@ -400,7 +673,7 @@ select:hover {
         relative;
 
     width:
-        300px;
+        310px;
 
 }
 
@@ -419,6 +692,12 @@ select:hover {
     transform:
         translateY(-50%);
 
+    font-size:
+        15px;
+
+    opacity:
+        0.7;
+
     pointer-events:
         none;
 
@@ -431,57 +710,74 @@ select:hover {
         100%;
 
     padding:
-        14px 16px 14px 42px;
+        13px 15px 13px 40px;
 
     border:
         1px solid var(--border);
 
     border-radius:
-        11px;
+        9px;
+
+    background:
+        var(--surface-soft);
+
+    color:
+        var(--text);
 
     font-size:
-        15px;
+        14px;
 
     outline:
         none;
 
     transition:
-        0.25s;
+        all 0.2s ease;
+
+}
+
+
+#searchInput::placeholder {
+
+    color:
+        #9aa3af;
 
 }
 
 
 #searchInput:focus {
 
+    background:
+        white;
+
     border-color:
-        var(--primary);
+        var(--navy-light);
 
     box-shadow:
-        0 0 0 4px rgba(11,61,145,0.08);
+        0 0 0 3px rgba(30,82,127,0.09);
 
 }
 
 
-/* ==========================================
-   CATEGORY FILTERS
-========================================== */
+/* =========================================================
+   CATEGORY FILTER BAR
+========================================================= */
 
 .category-wrapper {
 
     display:
         flex;
 
+    align-items:
+        center;
+
     gap:
-        9px;
+        8px;
 
     overflow-x:
         auto;
 
     padding:
-        5px 2px 18px;
-
-    margin-bottom:
-        20px;
+        20px 1px 17px;
 
     scrollbar-width:
         thin;
@@ -494,26 +790,35 @@ select:hover {
     flex:
         0 0 auto;
 
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        5px;
+
+    padding:
+        9px 14px;
+
     border:
         1px solid var(--border);
 
+    border-radius:
+        7px;
+
     background:
-        #f8fafc;
+        white;
 
     color:
-        #465268;
-
-    padding:
-        10px 15px;
-
-    border-radius:
-        30px;
+        #536071;
 
     font-size:
-        13px;
+        12px;
 
     font-weight:
-        700;
+        650;
 
     cursor:
         pointer;
@@ -527,7 +832,10 @@ select:hover {
 .category-button:hover {
 
     border-color:
-        #b9c8df;
+        #b8c2ce;
+
+    color:
+        var(--navy);
 
     transform:
         translateY(-1px);
@@ -538,23 +846,23 @@ select:hover {
 .category-button.active {
 
     background:
-        var(--primary);
+        var(--navy);
+
+    border-color:
+        var(--navy);
 
     color:
         white;
 
-    border-color:
-        var(--primary);
-
     box-shadow:
-        0 5px 14px rgba(11,61,145,0.18);
+        0 5px 12px rgba(18,52,91,0.15);
 
 }
 
 
-/* ==========================================
+/* =========================================================
    CONTACT GRID
-========================================== */
+========================================================= */
 
 #contactsContainer {
 
@@ -565,16 +873,25 @@ select:hover {
         repeat(auto-fit, minmax(285px, 1fr));
 
     gap:
-        18px;
+        17px;
 
 }
 
 
-/* ==========================================
+/* =========================================================
    CONTACT CARD
-========================================== */
+========================================================= */
 
 .contact-card {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    padding:
+        22px;
 
     background:
         white;
@@ -583,13 +900,7 @@ select:hover {
         1px solid var(--border);
 
     border-radius:
-        16px;
-
-    padding:
-        22px;
-
-    position:
-        relative;
+        13px;
 
     transition:
         transform 0.25s ease,
@@ -602,31 +913,70 @@ select:hover {
 }
 
 
-.contact-card:hover {
+/* left accent */
 
-    transform:
-        translateY(-5px);
+.contact-card::before {
 
-    border-color:
-        #cbd6e7;
+    content:
+        "";
 
-    box-shadow:
-        0 14px 32px rgba(0,0,0,0.08);
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        3px;
+
+    height:
+        0;
+
+    background:
+        var(--saffron);
+
+    transition:
+        height 0.25s ease;
 
 }
 
 
-/* ==========================================
-   ICON
-========================================== */
+.contact-card:hover::before {
+
+    height:
+        100%;
+
+}
+
+
+.contact-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        #d3cec3;
+
+    box-shadow:
+        0 13px 30px rgba(28,39,52,0.08);
+
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
 
 .contact-icon {
 
     width:
-        54px;
+        50px;
 
     height:
-        54px;
+        50px;
 
     display:
         flex;
@@ -637,14 +987,17 @@ select:hover {
     justify-content:
         center;
 
+    border:
+        1px solid #e3eaf1;
+
     background:
-        #eef4ff;
+        #f3f7fa;
 
     border-radius:
-        13px;
+        10px;
 
     font-size:
-        25px;
+        23px;
 
     margin-bottom:
         15px;
@@ -652,17 +1005,23 @@ select:hover {
 }
 
 
-/* ==========================================
-   CONTACT INFORMATION
-========================================== */
+/* =========================================================
+   CONTACT NAME
+========================================================= */
 
 .contact-card h3 {
 
+    color:
+        var(--navy);
+
     font-size:
-        18px;
+        17px;
+
+    font-weight:
+        720;
 
     margin-bottom:
-        3px;
+        2px;
 
 }
 
@@ -673,27 +1032,41 @@ select:hover {
         var(--muted);
 
     font-size:
-        13px;
+        12px;
+
+    font-weight:
+        550;
 
 }
 
 
+/* =========================================================
+   PHONE
+========================================================= */
+
 .phone {
 
+    color:
+        var(--navy);
+
     font-size:
-        27px;
+        26px;
 
     font-weight:
         800;
 
-    color:
-        var(--primary);
+    letter-spacing:
+        0.4px;
 
     margin:
-        9px 0;
+        9px 0 6px;
 
 }
 
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
 
 .contact-card p {
 
@@ -701,10 +1074,13 @@ select:hover {
         var(--muted);
 
     font-size:
-        14px;
+        13px;
+
+    line-height:
+        1.55;
 
     margin-bottom:
-        10px;
+        9px;
 
 }
 
@@ -712,17 +1088,17 @@ select:hover {
 .contact-card small {
 
     color:
-        var(--muted);
+        var(--light-text);
 
     font-size:
-        12px;
+        11px;
 
 }
 
 
-/* ==========================================
-   VERIFIED
-========================================== */
+/* =========================================================
+   VERIFIED BADGE
+========================================================= */
 
 .verified {
 
@@ -735,65 +1111,77 @@ select:hover {
     gap:
         5px;
 
-    background:
-        #e9f8ef;
-
-    color:
-        var(--success);
-
-    padding:
-        5px 9px;
-
-    border-radius:
-        20px;
-
-    font-size:
+    margin-top:
         11px;
 
-    font-weight:
-        700;
-
-    margin-top:
-        12px;
-
-}
-
-
-/* ==========================================
-   CALL BUTTON
-========================================== */
-
-.call-button {
-
-    display:
-        block;
-
-    text-align:
-        center;
-
-    text-decoration:
-        none;
-
-    background:
-        var(--success);
-
-    color:
-        white;
-
     padding:
-        12px;
+        4px 8px;
+
+    border:
+        1px solid #cce8d7;
 
     border-radius:
+        4px;
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    font-size:
         10px;
 
     font-weight:
         700;
 
+}
+
+
+/* =========================================================
+   CALL BUTTON
+========================================================= */
+
+.call-button {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        100%;
+
+    padding:
+        11px;
+
     margin-top:
-        16px;
+        15px;
+
+    border-radius:
+        7px;
+
+    background:
+        var(--green);
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-size:
+        13px;
+
+    font-weight:
+        750;
 
     transition:
-        0.25s;
+        all 0.2s ease;
 
 }
 
@@ -801,17 +1189,20 @@ select:hover {
 .call-button:hover {
 
     background:
-        #116b31;
+        var(--green-dark);
 
     transform:
-        translateY(-2px);
+        translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(22,131,75,0.2);
 
 }
 
 
-/* ==========================================
-   EMPTY STATE
-========================================== */
+/* =========================================================
+   EMPTY MESSAGE
+========================================================= */
 
 .empty-message {
 
@@ -822,7 +1213,7 @@ select:hover {
         center;
 
     padding:
-        60px 20px;
+        65px 20px;
 
     color:
         var(--muted);
@@ -833,7 +1224,10 @@ select:hover {
 .empty-message h3 {
 
     color:
-        var(--text);
+        var(--navy);
+
+    font-size:
+        18px;
 
     margin-bottom:
         5px;
@@ -841,26 +1235,60 @@ select:hover {
 }
 
 
-/* ==========================================
+.empty-message p {
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================================
    FOOTER
-========================================== */
+========================================================= */
 
 footer {
 
+    position:
+        relative;
+
     background:
-        #111827;
+        #102b47;
 
     color:
-        #cbd5e1;
+        #cbd7e3;
 
     text-align:
         center;
 
     padding:
-        35px 20px;
+        38px 20px;
 
-    font-size:
-        13px;
+    border-top:
+        4px solid var(--saffron);
+
+}
+
+
+footer::after {
+
+    content:
+        "";
+
+    display:
+        block;
+
+    width:
+        55px;
+
+    height:
+        3px;
+
+    margin:
+        16px auto 0;
+
+    background:
+        var(--green);
 
 }
 
@@ -882,33 +1310,44 @@ footer {
 }
 
 
-.footer-warning {
+footer p {
 
-    margin-top:
+    font-size:
         12px;
 
+    margin:
+        4px;
+
+}
+
+
+.footer-warning {
+
     color:
-        #94a3b8;
+        #9fb0c0;
+
+    margin-top:
+        12px !important;
 
 }
 
 
 .copyright {
 
-    margin-top:
-        18px;
-
     color:
-        #64748b;
+        #7f95aa;
+
+    margin-top:
+        17px !important;
 
 }
 
 
-/* ==========================================
+/* =========================================================
    ANIMATIONS
-========================================== */
+========================================================= */
 
-@keyframes fadeUp {
+@keyframes heroAppear {
 
     from {
 
@@ -916,7 +1355,7 @@ footer {
             0;
 
         transform:
-            translateY(20px);
+            translateY(18px);
 
     }
 
@@ -933,7 +1372,7 @@ footer {
 }
 
 
-@keyframes cardAppear {
+@keyframes contentAppear {
 
     from {
 
@@ -958,22 +1397,60 @@ footer {
 }
 
 
-/* ==========================================
+@keyframes cardAppear {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(10px);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
    MOBILE
-========================================== */
+========================================================= */
 
 @media (max-width: 700px) {
 
     .header {
 
-        flex-direction:
-            column;
-
-        align-items:
-            flex-start;
+        min-height:
+            68px;
 
         padding:
-            15px 20px;
+            0 18px;
+
+    }
+
+
+    .logo {
+
+        font-size:
+            17px;
+
+    }
+
+
+    .logo::before {
+
+        font-size:
+            23px;
 
     }
 
@@ -988,8 +1465,11 @@ footer {
 
     .container {
 
+        width:
+            94%;
+
         padding:
-            25px 15px 40px;
+            25px 0 45px;
 
     }
 
@@ -997,10 +1477,26 @@ footer {
     .location-section {
 
         padding:
-            45px 20px;
+            45px 19px;
 
         border-radius:
-            18px;
+            15px;
+
+    }
+
+
+    .location-section h1 {
+
+        font-size:
+            29px;
+
+    }
+
+
+    .location-section p {
+
+        font-size:
+            13px;
 
     }
 
@@ -1008,7 +1504,10 @@ footer {
     .directory {
 
         padding:
-            20px;
+            20px 17px;
+
+        border-radius:
+            14px;
 
     }
 
@@ -1021,6 +1520,17 @@ footer {
         align-items:
             stretch;
 
+        gap:
+            16px;
+
+    }
+
+
+    .directory-top h2 {
+
+        font-size:
+            23px;
+
     }
 
 
@@ -1032,10 +1542,34 @@ footer {
     }
 
 
+    .category-wrapper {
+
+        margin-right:
+            -5px;
+
+    }
+
+
     #contactsContainer {
 
         grid-template-columns:
             1fr;
+
+    }
+
+
+    .contact-card {
+
+        padding:
+            20px;
+
+    }
+
+
+    .phone {
+
+        font-size:
+            25px;
 
     }
 
