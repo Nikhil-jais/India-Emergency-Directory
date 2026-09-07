@@ -1,6 +1,5 @@
 // ==========================================
 // INDIA EMERGENCY DIRECTORY
-// Main Application JavaScript
 // ==========================================
 
 
@@ -8,9 +7,14 @@
 // DOM ELEMENTS
 // ==========================================
 
-const stateSelect = document.getElementById("stateSelect");
-const contactsContainer = document.getElementById("contactsContainer");
-const searchInput = document.getElementById("searchInput");
+const stateSelect =
+    document.getElementById("stateSelect");
+
+const contactsContainer =
+    document.getElementById("contactsContainer");
+
+const searchInput =
+    document.getElementById("searchInput");
 
 
 // ==========================================
@@ -18,26 +22,34 @@ const searchInput = document.getElementById("searchInput");
 // ==========================================
 
 let contacts = [];
+
 let states = [];
 
 
 // ==========================================
-// LOAD STATES / UNION TERRITORIES
+// LOAD STATES
 // ==========================================
 
 async function loadStates() {
 
     try {
 
-        const response = await fetch("data/states.json");
+        const response =
+            await fetch("data/states.json");
+
 
         if (!response.ok) {
-            throw new Error("Unable to load states.json");
+
+            throw new Error(
+                "Unable to load states.json"
+            );
+
         }
+
 
         states = await response.json();
 
-        // Clear existing options except first option
+
         stateSelect.innerHTML = `
             <option value="">
                 Select State / Union Territory
@@ -45,15 +57,19 @@ async function loadStates() {
         `;
 
 
-        // Add states to dropdown
         states.forEach(state => {
 
-            const option = document.createElement("option");
+            const option =
+                document.createElement("option");
 
-            option.value = state.id;
+
+            option.value =
+                state.id;
+
 
             option.textContent =
                 `${state.name} — ${state.type}`;
+
 
             stateSelect.appendChild(option);
 
@@ -63,9 +79,10 @@ async function loadStates() {
     } catch (error) {
 
         console.error(
-            "Error loading states:",
+            "State loading error:",
             error
         );
+
 
         stateSelect.innerHTML = `
             <option value="">
@@ -82,7 +99,7 @@ async function loadStates() {
 // LOAD NATIONAL CONTACTS
 // ==========================================
 
-async function loadContacts() {
+async function loadNationalContacts() {
 
     try {
 
@@ -93,23 +110,85 @@ async function loadContacts() {
         if (!response.ok) {
 
             throw new Error(
-                "Unable to load national.json"
+                "Unable to load national contacts"
             );
 
         }
 
 
-        contacts = await response.json();
+        contacts =
+            await response.json();
 
 
-        // Display contacts
         displayContacts(contacts);
 
 
     } catch (error) {
 
         console.error(
-            "Error loading contacts:",
+            "National contacts error:",
+            error
+        );
+
+
+        showError();
+
+    }
+
+}
+
+
+// ==========================================
+// LOAD STATE CONTACTS
+// ==========================================
+
+async function loadStateContacts(stateId) {
+
+    try {
+
+        contactsContainer.innerHTML = `
+
+            <div class="empty-message">
+
+                <h3>
+                    Loading contacts...
+                </h3>
+
+                <p>
+                    Please wait.
+                </p>
+
+            </div>
+
+        `;
+
+
+        const response =
+            await fetch(
+                `data/states/${stateId}.json`
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "State contact file not found"
+            );
+
+        }
+
+
+        contacts =
+            await response.json();
+
+
+        displayContacts(contacts);
+
+
+    } catch (error) {
+
+        console.error(
+            "State contacts error:",
             error
         );
 
@@ -119,11 +198,12 @@ async function loadContacts() {
             <div class="empty-message">
 
                 <h3>
-                    Unable to load contacts
+                    📍 ${getStateName(stateId)}
                 </h3>
 
                 <p>
-                    Please refresh the page and try again.
+                    State-specific contacts are
+                    not available yet.
                 </p>
 
             </div>
@@ -144,7 +224,6 @@ function displayContacts(list) {
     contactsContainer.innerHTML = "";
 
 
-    // No contacts found
     if (!list || list.length === 0) {
 
         contactsContainer.innerHTML = `
@@ -168,7 +247,6 @@ function displayContacts(list) {
     }
 
 
-    // Create cards
     list.forEach(contact => {
 
         const card =
@@ -206,18 +284,10 @@ function displayContacts(list) {
             </p>
 
 
-            ${
-                contact.availability
-                ?
-                `
-                <small>
-                    Availability:
-                    ${contact.availability}
-                </small>
-                `
-                :
-                ""
-            }
+            <small>
+                Availability:
+                ${contact.availability || "Check official source"}
+            </small>
 
 
             ${
@@ -251,7 +321,7 @@ function displayContacts(list) {
 
 
 // ==========================================
-// SEARCH CONTACTS
+// SEARCH
 // ==========================================
 
 searchInput.addEventListener(
@@ -264,7 +334,6 @@ searchInput.addEventListener(
                 .trim();
 
 
-        // If search is empty
         if (searchTerm === "") {
 
             displayContacts(contacts);
@@ -274,30 +343,28 @@ searchInput.addEventListener(
         }
 
 
-        // Search name, category,
-        // description and phone number
-
         const filteredContacts =
             contacts.filter(contact => {
 
                 const name =
-                    contact.name
-                        ?.toLowerCase() || "";
+                    (contact.name || "")
+                    .toLowerCase();
 
 
                 const category =
-                    contact.category
-                        ?.toLowerCase() || "";
+                    (contact.category || "")
+                    .toLowerCase();
 
 
                 const description =
-                    contact.description
-                        ?.toLowerCase() || "";
+                    (contact.description || "")
+                    .toLowerCase();
 
 
                 const phone =
-                    contact.phone
-                        ?.toString() || "";
+                    String(
+                        contact.phone || ""
+                    );
 
 
                 return (
@@ -321,7 +388,9 @@ searchInput.addEventListener(
             });
 
 
-        displayContacts(filteredContacts);
+        displayContacts(
+            filteredContacts
+        );
 
     }
 );
@@ -339,54 +408,20 @@ stateSelect.addEventListener(
             stateSelect.value;
 
 
-        // If no state selected
-        // show national contacts
-
+        // Nothing selected
         if (!selectedState) {
 
-            await loadContacts();
+            await loadNationalContacts();
 
             return;
 
         }
 
 
-        console.log(
-            "Selected state:",
+        // Load selected state
+        await loadStateContacts(
             selectedState
         );
-
-
-        /*
-            STATE DATABASE WILL BE CONNECTED
-            IN THE NEXT STEP.
-
-            Example:
-
-            states/
-            ├── uttar-pradesh.json
-            ├── maharashtra.json
-            ├── bihar.json
-            └── ...
-        */
-
-
-        contactsContainer.innerHTML = `
-
-            <div class="empty-message">
-
-                <h3>
-                    📍 ${getStateName(selectedState)}
-                </h3>
-
-                <p>
-                    State-specific contacts
-                    will be loaded here.
-                </p>
-
-            </div>
-
-        `;
 
     }
 );
@@ -400,39 +435,58 @@ function getStateName(stateId) {
 
     const state =
         states.find(
-            item => item.id === stateId
+            item =>
+                item.id === stateId
         );
 
 
-    if (state) {
-
-        return state.name;
-
-    }
-
-
-    return "Selected State";
+    return state
+        ? state.name
+        : "Selected State";
 
 }
 
 
 // ==========================================
-// INITIALIZE APPLICATION
+// ERROR MESSAGE
+// ==========================================
+
+function showError() {
+
+    contactsContainer.innerHTML = `
+
+        <div class="empty-message">
+
+            <h3>
+                Unable to load contacts
+            </h3>
+
+            <p>
+                Please refresh the application
+                and try again.
+            </p>
+
+        </div>
+
+    `;
+
+}
+
+
+// ==========================================
+// START APPLICATION
 // ==========================================
 
 async function initializeApp() {
 
     console.log(
-        "🇮🇳 India Emergency Directory starting..."
+        "🇮🇳 Starting India Emergency Directory..."
     );
 
 
-    // Load states
     await loadStates();
 
-
-    // Load national contacts
-    await loadContacts();
+    await loadNationalContacts();
 
 
     console.log(
@@ -442,8 +496,6 @@ async function initializeApp() {
 }
 
 
-// ==========================================
-// START APPLICATION
-// ==========================================
+// Start
 
 initializeApp();
