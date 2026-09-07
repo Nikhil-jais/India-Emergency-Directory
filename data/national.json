@@ -1,13 +1,39 @@
 [
     {
         "id": "national-112",
-        "name": "Emergency Response",
+        "name": "Integrated Emergency Response",
         "category": "Emergency",
         "phone": "112",
-        "description": "Integrated emergency response service for police, fire, health and other emergencies.",
+        "description": "Integrated emergency response service for police, fire, rescue, health and other emergencies.",
         "availability": "24/7",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-100",
+        "name": "Police Helpline",
+        "category": "Police",
+        "phone": "100",
+        "description": "Police emergency assistance and law-and-order support.",
+        "availability": "24/7",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-101",
+        "name": "Fire Helpline",
+        "category": "Fire & Rescue",
+        "phone": "101",
+        "description": "Emergency fire and rescue assistance.",
+        "availability": "24/7",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -17,10 +43,10 @@
         "name": "National Ambulance Service",
         "category": "Medical",
         "phone": "102",
-        "description": "National ambulance service.",
+        "description": "National ambulance service for emergency medical transportation and assistance.",
         "availability": "24/7",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -30,10 +56,10 @@
         "name": "Cyber Crime Helpline",
         "category": "Cyber Crime",
         "phone": "1930",
-        "description": "Helpline for reporting cybercrime and cyber financial fraud.",
+        "description": "National helpline for reporting cybercrime and cyber financial fraud.",
         "availability": "24/7",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -41,12 +67,38 @@
     {
         "id": "national-1906",
         "name": "LPG Leak Helpline",
-        "category": "Emergency",
+        "category": "Gas & LPG",
         "phone": "1906",
-        "description": "Helpline for reporting LPG gas leaks.",
+        "description": "Helpline for reporting LPG gas leaks and related emergencies.",
         "availability": "24/7",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1070",
+        "name": "Relief Commissioner for Natural Calamities",
+        "category": "Disaster Management",
+        "phone": "1070",
+        "description": "Helpline associated with assistance during natural calamities and disasters.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-01124363260",
+        "name": "Earthquake, Flood & Disaster Assistance",
+        "category": "Disaster Management",
+        "phone": "011-24363260",
+        "description": "Contact associated with earthquake, flood, disaster and NDRF-related assistance.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -56,10 +108,10 @@
         "name": "National Consumer Helpline",
         "category": "Consumer",
         "phone": "1915",
-        "description": "Consumer assistance and grievance support.",
+        "description": "National consumer assistance and grievance support service.",
         "availability": "Check official source",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -69,10 +121,10 @@
         "name": "Road Accident Helpline",
         "category": "Road Safety",
         "phone": "1073",
-        "description": "Helpline for road accident assistance.",
+        "description": "Helpline for road accident-related assistance.",
         "availability": "Check official source",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -80,12 +132,90 @@
     {
         "id": "national-1933",
         "name": "MANAS National Narcotics Helpline",
-        "category": "Narcotics",
+        "category": "Public Safety",
         "phone": "1933",
-        "description": "National helpline related to narcotics and drug-related assistance.",
+        "description": "National helpline for information and assistance related to narcotics and drug-related matters.",
         "availability": "Check official source",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-7827170170",
+        "name": "National Commission for Women Helpline",
+        "category": "Women",
+        "phone": "7827170170",
+        "description": "Helpline associated with the National Commission for Women for women-related assistance and complaints.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-10920",
+        "name": "Shakti Shalini Helpline",
+        "category": "Women",
+        "phone": "10920",
+        "description": "Helpline providing support and assistance for women.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-01124619821",
+        "name": "Sakhi Women's Helpline",
+        "category": "Women",
+        "phone": "011-24619821",
+        "description": "Women's assistance helpline.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-181-women",
+        "name": "Women Helpline",
+        "category": "Women",
+        "phone": "181",
+        "description": "Women helpline providing support and assistance.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-18002000737",
+        "name": "Rape Crisis Helpline",
+        "category": "Women",
+        "phone": "1800-2000-737",
+        "description": "Helpline listed by the National Portal for crisis assistance.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-14678",
+        "name": "SUBHADRA Yojana Helpline",
+        "category": "Women & Welfare",
+        "phone": "14678",
+        "description": "Helpline associated with the SUBHADRA Yojana.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -95,10 +225,36 @@
         "name": "Child Helpline",
         "category": "Children",
         "phone": "1098",
-        "description": "Helpline for children requiring assistance and protection.",
+        "description": "Helpline for children requiring care, assistance, protection or support.",
         "availability": "24/7",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-14433",
+        "name": "National Human Rights Commission Helpline",
+        "category": "Human Rights",
+        "phone": "14433",
+        "description": "Toll-free helpline associated with the National Human Rights Commission.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1091",
+        "name": "Anti-Obscene Calls Cell",
+        "category": "Women & Safety",
+        "phone": "1091",
+        "description": "Helpline listed for reporting obscene or inappropriate calls.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -108,10 +264,23 @@
         "name": "Senior Citizens Helpline",
         "category": "Senior Citizens",
         "phone": "14567",
-        "description": "Helpline for senior citizens.",
+        "description": "Helpline for senior citizens seeking assistance and support.",
         "availability": "Check official source",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-01120893999",
+        "name": "Senior Citizens Helpline",
+        "category": "Senior Citizens",
+        "phone": "011-20893999",
+        "description": "Additional senior citizen assistance contact listed by the National Portal.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
@@ -121,36 +290,179 @@
         "name": "Persons with Disabilities Helpline",
         "category": "Disability Support",
         "phone": "14456",
-        "description": "Helpline for persons with disabilities.",
+        "description": "Helpline for persons with disabilities and disability-related assistance.",
         "availability": "Check official source",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
 
     {
         "id": "national-139",
-        "name": "Railway Security / Medical Assistance",
+        "name": "Railway Security & Medical Assistance",
         "category": "Railways",
         "phone": "139",
         "description": "Railway assistance including security and medical assistance.",
         "availability": "Check official source",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-3800",
+        "name": "State Bank of India Enquiry",
+        "category": "Banking",
+        "phone": "3800",
+        "description": "Banking enquiry contact listed by the National Portal.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-01206619540",
+        "name": "National Scholarship Portal Technical Helpdesk",
+        "category": "Education",
+        "phone": "0120-6619540",
+        "description": "Technical helpdesk for the National Scholarship Portal.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-18002581800",
+        "name": "Passport Seva",
+        "category": "Passport & Travel",
+        "phone": "1800-258-1800",
+        "description": "National Passport Seva assistance and enquiry service.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-04066720567",
+        "name": "Passport Seva - Jammu & Kashmir",
+        "category": "Passport & Travel",
+        "phone": "040-66720567",
+        "description": "Paid Passport Seva contact listed for Jammu & Kashmir.",
+        "availability": "Check official source",
+        "scope": "Regional",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-04066720581",
+        "name": "Passport Seva - North East States",
+        "category": "Passport & Travel",
+        "phone": "040-66720581",
+        "description": "Paid Passport Seva contact listed for North Eastern states.",
+        "availability": "Check official source",
+        "scope": "Regional",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     },
 
     {
         "id": "national-1947",
-        "name": "UIDAI Helpline",
-        "category": "Government Services",
+        "name": "UIDAI Aadhaar Helpline",
+        "category": "Identity & Aadhaar",
         "phone": "1947",
-        "description": "UIDAI Aadhaar-related assistance.",
+        "description": "UIDAI assistance for Aadhaar-related services and enquiries.",
         "availability": "Check official source",
         "scope": "National",
-        "source": "https://www.india.gov.in/",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1800110396",
+        "name": "PM DAKSH Helpline",
+        "category": "Government Welfare",
+        "phone": "1800110396",
+        "description": "Helpline associated with PM DAKSH government welfare and skill-development initiatives.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1800112100",
+        "name": "FSSAI Helpdesk",
+        "category": "Food Safety",
+        "phone": "1800112100",
+        "description": "Food safety assistance and helpdesk contact associated with FSSAI.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1800111363",
+        "name": "Tourist Helpline",
+        "category": "Tourism",
+        "phone": "1800-11-1363",
+        "description": "Tourist assistance helpline.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1363",
+        "name": "Tourist Helpline Short Code",
+        "category": "Tourism",
+        "phone": "1363",
+        "description": "Short-code tourist assistance helpline.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-1075",
+        "name": "Central Health Helpline",
+        "category": "Health",
+        "phone": "1075",
+        "description": "Central health helpline number listed by the National Portal.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
+        "verified": true,
+        "lastVerified": "2026-09-07"
+    },
+
+    {
+        "id": "national-01123978046",
+        "name": "Central Health Helpline",
+        "category": "Health",
+        "phone": "011-23978046",
+        "description": "Central health assistance contact listed by the National Portal.",
+        "availability": "Check official source",
+        "scope": "National",
+        "source": "https://www.india.gov.in/directory/helpline",
         "verified": true,
         "lastVerified": "2026-09-07"
     }
