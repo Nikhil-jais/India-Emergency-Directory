@@ -1,239 +1,901 @@
 [
     {
-        "id": "up-112",
-        "name": "Emergency Response",
-        "category": "Emergency",
-        "phone": "112",
-        "icon": "🚨",
-        "description": "Emergency response service for police, fire, medical and other emergencies.",
-        "availability": "24/7",
-        "scope": "Uttar Pradesh",
-        "verified": true
-    },
-    {
-        "id": "up-police",
-        "name": "Police",
-        "category": "Police",
-        "phone": "112",
-        "icon": "🚔",
-        "description": "Emergency police assistance in Uttar Pradesh.",
-        "availability": "24/7",
-        "scope": "Uttar Pradesh",
-        "verified": true
-    },
-    {
-        "id": "up-fire",
-        "name": "Fire & Rescue",
-        "category": "Fire",
-        "phone": "101",
-        "icon": "🔥",
-        "description": "Fire and rescue emergency assistance.",
-        "availability": "24/7",
-        "scope": "Uttar Pradesh",
-        "verified": true
-    },
-    {
-        "id": "up-ambulance",
-        "name": "Ambulance",
-        "category": "Medical",
-        "phone": "108",
-        "icon": "🚑",
-        "description": "Emergency ambulance service.",
-        "availability": "24/7",
-        "scope": "Uttar Pradesh",
-        "verified": true
-    },
-    {
-        "id": "up-child",
-        "name": "Child Helpline",
-        "category": "Children",
-        "phone": "1098",
-        "icon": "👶",
-        "description": "Assistance and protection services for children.",
-        "availability": "24/7",
-        "scope": "Uttar Pradesh",
-        "verified": true
-    }
-][
-    {
         "id": "andhra-pradesh",
         "name": "Andhra Pradesh",
-        "type": "State"
+        "type": "State",
+        "capital": "Amaravati",
+        "region": "South India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Andhra Pradesh.",
+        "keywords": ["AP", "Andhra", "Amaravati", "Andhra Pradesh"],
+        "scope": "Andhra Pradesh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "arunachal-pradesh",
         "name": "Arunachal Pradesh",
-        "type": "State"
+        "type": "State",
+        "capital": "Itanagar",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Arunachal Pradesh.",
+        "keywords": ["AR", "Arunachal", "Itanagar"],
+        "scope": "Arunachal Pradesh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "assam",
         "name": "Assam",
-        "type": "State"
+        "type": "State",
+        "capital": "Dispur",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Assam.",
+        "keywords": ["AS", "Assam", "Dispur", "Guwahati"],
+        "scope": "Assam",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "bihar",
         "name": "Bihar",
-        "type": "State"
+        "type": "State",
+        "capital": "Patna",
+        "region": "East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Bihar.",
+        "keywords": ["BR", "Bihar", "Patna"],
+        "scope": "Bihar",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "chhattisgarh",
         "name": "Chhattisgarh",
-        "type": "State"
+        "type": "State",
+        "capital": "Raipur",
+        "region": "Central India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Chhattisgarh.",
+        "keywords": ["CG", "Chhattisgarh", "Raipur"],
+        "scope": "Chhattisgarh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "goa",
         "name": "Goa",
-        "type": "State"
+        "type": "State",
+        "capital": "Panaji",
+        "region": "West India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Goa.",
+        "keywords": ["GA", "Goa", "Panaji"],
+        "scope": "Goa",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "gujarat",
         "name": "Gujarat",
-        "type": "State"
+        "type": "State",
+        "capital": "Gandhinagar",
+        "region": "West India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Gujarat.",
+        "keywords": ["GJ", "Gujarat", "Gandhinagar", "Ahmedabad"],
+        "scope": "Gujarat",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "haryana",
         "name": "Haryana",
-        "type": "State"
+        "type": "State",
+        "capital": "Chandigarh",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Haryana.",
+        "keywords": ["HR", "Haryana", "Chandigarh"],
+        "scope": "Haryana",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "himachal-pradesh",
         "name": "Himachal Pradesh",
-        "type": "State"
+        "type": "State",
+        "capital": "Shimla",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Himachal Pradesh.",
+        "keywords": ["HP", "Himachal", "Shimla"],
+        "scope": "Himachal Pradesh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "jharkhand",
         "name": "Jharkhand",
-        "type": "State"
+        "type": "State",
+        "capital": "Ranchi",
+        "region": "East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Jharkhand.",
+        "keywords": ["JH", "Jharkhand", "Ranchi"],
+        "scope": "Jharkhand",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "karnataka",
         "name": "Karnataka",
-        "type": "State"
+        "type": "State",
+        "capital": "Bengaluru",
+        "region": "South India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Karnataka.",
+        "keywords": ["KA", "Karnataka", "Bengaluru", "Bangalore"],
+        "scope": "Karnataka",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "kerala",
         "name": "Kerala",
-        "type": "State"
+        "type": "State",
+        "capital": "Thiruvananthapuram",
+        "region": "South India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Kerala.",
+        "keywords": ["KL", "Kerala", "Thiruvananthapuram", "Trivandrum"],
+        "scope": "Kerala",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "madhya-pradesh",
         "name": "Madhya Pradesh",
-        "type": "State"
+        "type": "State",
+        "capital": "Bhopal",
+        "region": "Central India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Madhya Pradesh.",
+        "keywords": ["MP", "Madhya Pradesh", "Bhopal", "Indore"],
+        "scope": "Madhya Pradesh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "maharashtra",
         "name": "Maharashtra",
-        "type": "State"
+        "type": "State",
+        "capital": "Mumbai",
+        "region": "West India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Maharashtra.",
+        "keywords": ["MH", "Maharashtra", "Mumbai", "Pune", "Nagpur"],
+        "scope": "Maharashtra",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "manipur",
         "name": "Manipur",
-        "type": "State"
+        "type": "State",
+        "capital": "Imphal",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Manipur.",
+        "keywords": ["MN", "Manipur", "Imphal"],
+        "scope": "Manipur",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "meghalaya",
         "name": "Meghalaya",
-        "type": "State"
+        "type": "State",
+        "capital": "Shillong",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Meghalaya.",
+        "keywords": ["ML", "Meghalaya", "Shillong"],
+        "scope": "Meghalaya",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "mizoram",
         "name": "Mizoram",
-        "type": "State"
+        "type": "State",
+        "capital": "Aizawl",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Mizoram.",
+        "keywords": ["MZ", "Mizoram", "Aizawl"],
+        "scope": "Mizoram",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "nagaland",
         "name": "Nagaland",
-        "type": "State"
+        "type": "State",
+        "capital": "Kohima",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Nagaland.",
+        "keywords": ["NL", "Nagaland", "Kohima", "Dimapur"],
+        "scope": "Nagaland",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "odisha",
         "name": "Odisha",
-        "type": "State"
+        "type": "State",
+        "capital": "Bhubaneswar",
+        "region": "East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Odisha.",
+        "keywords": ["OD", "OR", "Odisha", "Bhubaneswar", "Cuttack"],
+        "scope": "Odisha",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "punjab",
         "name": "Punjab",
-        "type": "State"
+        "type": "State",
+        "capital": "Chandigarh",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Punjab.",
+        "keywords": ["PB", "Punjab", "Chandigarh", "Amritsar", "Ludhiana"],
+        "scope": "Punjab",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "rajasthan",
         "name": "Rajasthan",
-        "type": "State"
+        "type": "State",
+        "capital": "Jaipur",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Rajasthan.",
+        "keywords": ["RJ", "Rajasthan", "Jaipur", "Jodhpur", "Udaipur"],
+        "scope": "Rajasthan",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "sikkim",
         "name": "Sikkim",
-        "type": "State"
+        "type": "State",
+        "capital": "Gangtok",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Sikkim.",
+        "keywords": ["SK", "Sikkim", "Gangtok"],
+        "scope": "Sikkim",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "tamil-nadu",
         "name": "Tamil Nadu",
-        "type": "State"
+        "type": "State",
+        "capital": "Chennai",
+        "region": "South India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Tamil Nadu.",
+        "keywords": ["TN", "Tamil Nadu", "Chennai", "Coimbatore", "Madurai"],
+        "scope": "Tamil Nadu",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "telangana",
         "name": "Telangana",
-        "type": "State"
+        "type": "State",
+        "capital": "Hyderabad",
+        "region": "South India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Telangana.",
+        "keywords": ["TS", "TG", "Telangana", "Hyderabad"],
+        "scope": "Telangana",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "tripura",
         "name": "Tripura",
-        "type": "State"
+        "type": "State",
+        "capital": "Agartala",
+        "region": "North East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Tripura.",
+        "keywords": ["TR", "Tripura", "Agartala"],
+        "scope": "Tripura",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "uttar-pradesh",
         "name": "Uttar Pradesh",
-        "type": "State"
+        "type": "State",
+        "capital": "Lucknow",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Uttar Pradesh.",
+        "keywords": ["UP", "Uttar Pradesh", "Lucknow", "Varanasi", "Prayagraj", "Noida", "Kanpur"],
+        "scope": "Uttar Pradesh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "uttarakhand",
         "name": "Uttarakhand",
-        "type": "State"
+        "type": "State",
+        "capital": "Dehradun",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Uttarakhand.",
+        "keywords": ["UK", "Uttarakhand", "Dehradun", "Haridwar", "Nainital"],
+        "scope": "Uttarakhand",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "west-bengal",
         "name": "West Bengal",
-        "type": "State"
+        "type": "State",
+        "capital": "Kolkata",
+        "region": "East India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for West Bengal.",
+        "keywords": ["WB", "West Bengal", "Kolkata", "Howrah", "Siliguri"],
+        "scope": "West Bengal",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
 
     {
         "id": "andaman-nicobar",
         "name": "Andaman and Nicobar Islands",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "Port Blair",
+        "region": "Islands",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Andaman and Nicobar Islands.",
+        "keywords": ["AN", "Andaman", "Nicobar", "Port Blair"],
+        "scope": "Andaman and Nicobar Islands",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "chandigarh",
         "name": "Chandigarh",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "Chandigarh",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Chandigarh.",
+        "keywords": ["CH", "Chandigarh"],
+        "scope": "Chandigarh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "dadra-nagar-haveli-daman-diu",
         "name": "Dadra and Nagar Haveli and Daman and Diu",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "Daman",
+        "region": "West India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Dadra and Nagar Haveli and Daman and Diu.",
+        "keywords": ["DNHDD", "Daman", "Diu", "Dadra", "Nagar Haveli"],
+        "scope": "Dadra and Nagar Haveli and Daman and Diu",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "delhi",
         "name": "Delhi",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "New Delhi",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Delhi.",
+        "keywords": ["DL", "Delhi", "New Delhi", "NCR"],
+        "scope": "Delhi",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "jammu-kashmir",
         "name": "Jammu and Kashmir",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "Srinagar / Jammu",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Jammu and Kashmir.",
+        "keywords": ["JK", "Jammu", "Kashmir", "Srinagar"],
+        "scope": "Jammu and Kashmir",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "ladakh",
         "name": "Ladakh",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "Leh",
+        "region": "North India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Ladakh.",
+        "keywords": ["LA", "Ladakh", "Leh", "Kargil"],
+        "scope": "Ladakh",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "lakshadweep",
         "name": "Lakshadweep",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "Kavaratti",
+        "region": "Islands",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Lakshadweep.",
+        "keywords": ["LD", "Lakshadweep", "Kavaratti"],
+        "scope": "Lakshadweep",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     },
+
     {
         "id": "puducherry",
         "name": "Puducherry",
-        "type": "Union Territory"
+        "type": "Union Territory",
+        "capital": "Puducherry",
+        "region": "South India",
+        "emergency": {
+            "number": "112",
+            "services": ["Police", "Fire & Rescue", "Medical", "Emergency Assistance"],
+            "availability": "24/7"
+        },
+        "directory": {
+            "government": true,
+            "districts": true,
+            "departments": true,
+            "publicUtilities": true
+        },
+        "description": "Government, emergency and public-service directory for Puducherry.",
+        "keywords": ["PY", "Puducherry", "Pondicherry"],
+        "scope": "Puducherry",
+        "verified": true,
+        "source": "https://www.india.gov.in/directory",
+        "lastVerified": "2026-09-07"
     }
 ]
