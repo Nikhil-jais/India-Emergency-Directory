@@ -2423,22 +2423,8 @@ async function initializeApp() {
        Welcome screen.
     */
 
-    showWelcomeExperience();
-
-    /*
-       If welcome has already been seen,
-       reveal the app immediately.
-    */
-
-    if (
-        localStorage.getItem(
-            APP_CONFIG.storageKeys.welcomeSeen
-        ) === "true"
-    ) {
-
-        revealApplication();
-    }
-
+  showAppSplash();
+   
     console.log(
         "🇮🇳 India Emergency Directory loaded successfully."
     );
