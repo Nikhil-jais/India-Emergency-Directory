@@ -206,150 +206,35 @@ function getAvailabilityInfo(availability, category) {
 
 
 /* =========================================================
-   6. WELCOME EXPERIENCE
+   6. APP LAUNCH / SPLASH EXPERIENCE
    ========================================================= */
 
-function showWelcomeExperience() {
+function showAppSplash() {
 
-    const alreadySeen =
-        localStorage.getItem(APP_CONFIG.storageKeys.welcomeSeen);
+    const splash = document.getElementById("appSplash");
 
-    if (alreadySeen === "true") {
+    if (!splash) {
+        revealApplication();
         return;
     }
 
-    const overlay = document.createElement("div");
+    document.body.classList.add("splash-active");
 
-    overlay.id = "welcomeOverlay";
+    setTimeout(() => {
 
-    overlay.innerHTML = `
-        <div class="welcome-backdrop"></div>
-
-        <div class="welcome-card">
-
-            <div class="welcome-symbol">
-                <span>🇮🇳</span>
-            </div>
-
-            <div class="welcome-kicker">
-                CITIZEN SERVICE DIRECTORY
-            </div>
-
-            <h1>
-                Welcome to the
-                <strong>Emergency Directory</strong>
-            </h1>
-
-            <p class="welcome-description">
-                A simple place to find emergency,
-                government and public-service contacts
-                across India.
-            </p>
-
-            <div class="welcome-features">
-
-                <div class="welcome-feature">
-                    <span>🚨</span>
-                    <div>
-                        <strong>Emergency access</strong>
-                        <small>Find critical services quickly</small>
-                    </div>
-                </div>
-
-                <div class="welcome-feature">
-                    <span>📍</span>
-                    <div>
-                        <strong>State & UT directory</strong>
-                        <small>Explore services by location</small>
-                    </div>
-                </div>
-
-                <div class="welcome-feature">
-                    <span>🔎</span>
-                    <div>
-                        <strong>Smart search</strong>
-                        <small>Search contacts and services</small>
-                    </div>
-                </div>
-
-                <div class="welcome-feature">
-                    <span>🛡️</span>
-                    <div>
-                        <strong>Source-aware information</strong>
-                        <small>Always verify important details</small>
-                    </div>
-                </div>
-
-            </div>
-
-            <button
-                type="button"
-                class="welcome-enter"
-                id="welcomeEnterButton"
-            >
-                Enter Emergency Directory
-                <span>→</span>
-            </button>
-
-            <p class="welcome-note">
-                For immediate danger, use the appropriate
-                official emergency service.
-            </p>
-
-        </div>
-    `;
-
-    document.body.appendChild(overlay);
-
-    document.body.classList.add("welcome-active");
-
-    const enterButton =
-        $("#welcomeEnterButton");
-
-    enterButton.addEventListener("click", () => {
-
-        localStorage.setItem(
-            APP_CONFIG.storageKeys.welcomeSeen,
-            "true"
-        );
-
-        overlay.classList.add("welcome-closing");
+        splash.classList.add("splash-closing");
 
         setTimeout(() => {
 
-            overlay.remove();
+            splash.remove();
 
-            document.body.classList.remove(
-                "welcome-active"
-            );
+            document.body.classList.remove("splash-active");
 
             revealApplication();
 
-        }, 500);
-    });
+        }, 700);
 
-    /*
-       Allow Enter key to enter the website.
-    */
-
-    document.addEventListener(
-        "keydown",
-        handleWelcomeKeyboard
-    );
-}
-
-
-function handleWelcomeKeyboard(event) {
-
-    if (event.key === "Enter") {
-
-        const button =
-            $("#welcomeEnterButton");
-
-        if (button) {
-            button.click();
-        }
-    }
+    }, 2800);
 }
 
 
