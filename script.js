@@ -2423,7 +2423,6 @@ async function initializeApp() {
        Welcome screen.
     */
 
-  showAppSplash();
    
     console.log(
         "🇮🇳 India Emergency Directory loaded successfully."
