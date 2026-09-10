@@ -42,7 +42,7 @@
 </head>
 
 
-<body>
+<body style="visibility: hidden;">
 <!-- =========================================================
      APP LAUNCH / SPLASH SCREEN
 ========================================================= -->
@@ -1168,12 +1168,10 @@
 <script src="script.js"></script>
 
 <script>
-    document.documentElement.classList.add("page-ready");
+    window.addEventListener("load", function () {
+        document.body.style.visibility = "visible";
+    });
 </script>
-
-</body>
-
-</html>
 
 </body>
 
