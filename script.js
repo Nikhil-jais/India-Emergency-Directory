@@ -2447,5 +2447,47 @@ if (
 
 } else {
 
-    initializeApp();
+ // ==========================================
+// WELCOME EXPERIENCE
+// ==========================================
+
+function initializeWelcomeExperience() {
+
+    const welcomeOverlay =
+        document.getElementById("welcomeOverlay");
+
+    const welcomeEnter =
+        document.getElementById("welcomeEnter");
+
+    if (!welcomeOverlay || !welcomeEnter) {
+        return;
+    }
+
+    // Keep the welcome screen locked
+    document.body.classList.add("welcome-active");
+
+    welcomeEnter.addEventListener("click", function () {
+
+        welcomeOverlay.classList.add("welcome-closing");
+
+        document.body.classList.remove("welcome-active");
+
+        setTimeout(function () {
+
+            welcomeOverlay.remove();
+
+        }, 550);
+
+    });
+
+}
+
+
+// ==========================================
+// START APPLICATION
+// ==========================================
+
+initializeApp();
+
+initializeWelcomeExperience();   
 }
