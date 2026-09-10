@@ -26,6 +26,19 @@
 
     <link rel="stylesheet" href="style.css">
 
+<!-- Prevent flash of unstyled content -->
+<style>
+    html:not(.page-ready) body {
+        visibility: hidden;
+    }
+
+    html.page-ready body {
+        visibility: visible;
+    }
+</style>
+
+</head>
+
 </head>
 
 
@@ -1153,6 +1166,14 @@
 ========================================================= -->
 
 <script src="script.js"></script>
+
+<script>
+    document.documentElement.classList.add("page-ready");
+</script>
+
+</body>
+
+</html>
 
 </body>
 
