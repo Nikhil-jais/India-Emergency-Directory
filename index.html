@@ -24,14 +24,21 @@
         India Emergency Directory | Emergency & Government Services
     </title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 <!-- Prevent flash of unstyled content -->
+<style>
+    html {
+        visibility: hidden;
+    }
 
+    html.page-ready {
+        visibility: visible;
+    }
+</style>
 
 </head>
 
-</head>
 
 
 <body>
@@ -1186,9 +1193,7 @@
 <script src="script.js"></script>
 
 <script>
-    window.addEventListener("load", function () {
-        document.body.style.visibility = "visible";
-    });
+    document.documentElement.classList.add("page-ready");
 </script>
 
 </body>
