@@ -44,57 +44,83 @@
 
 <body style="visibility: hidden;">
 <!-- =========================================================
-     APP LAUNCH / SPLASH SCREEN
+     WELCOME EXPERIENCE
 ========================================================= -->
+<div id="welcomeOverlay">
 
-<div id="appSplash" class="app-splash">
+    <div class="welcome-card">
 
-    <div class="splash-background"></div>
-
-    <div class="splash-content">
-
-        <!-- INDIA EMBLEM -->
-        <div class="splash-emblem">
+        <div class="welcome-symbol">
             🇮🇳
         </div>
 
-        <!-- BRAND -->
-        <div class="splash-brand">
-            <h1>
-                India Emergency
-                <span>Directory</span>
-            </h1>
-
-            <p>
-                Emergency • Government • Public Services
-            </p>
+        <div class="welcome-kicker">
+            CITIZEN SERVICE PLATFORM
         </div>
 
-        <!-- TRICOLOR LINE -->
-        <div class="splash-tricolor">
-            <span></span>
-            <span></span>
-            <span></span>
+        <h1>
+            Welcome to
+            <strong>India Emergency Directory</strong>
+        </h1>
+
+        <p class="welcome-description">
+            A unified directory for emergency numbers,
+            government helplines and essential public services
+            across India.
+        </p>
+
+        <div class="welcome-features">
+
+            <div class="welcome-feature">
+                <span>🚨</span>
+                <div>
+                    <strong>Emergency Help</strong>
+                    <small>Quick access to essential numbers</small>
+                </div>
+            </div>
+
+            <div class="welcome-feature">
+                <span>🏛️</span>
+                <div>
+                    <strong>Government Services</strong>
+                    <small>Public information and helplines</small>
+                </div>
+            </div>
+
+            <div class="welcome-feature">
+                <span>📍</span>
+                <div>
+                    <strong>State & UT Services</strong>
+                    <small>Find services across India</small>
+                </div>
+            </div>
+
+            <div class="welcome-feature">
+                <span>🛡️</span>
+                <div>
+                    <strong>Citizen Support</strong>
+                    <small>Organized and accessible information</small>
+                </div>
+            </div>
+
         </div>
 
-        <!-- LOADING -->
-        <div class="splash-loading">
+        <button
+            id="welcomeEnter"
+            class="welcome-enter"
+            type="button"
+        >
+            <span>Enter Directory</span>
+            →
+        </button>
 
-            <div class="splash-loading-track">
-                <div class="splash-loading-bar"></div>
-            </div>
-
-            <div class="splash-loading-text">
-                <span>SECURE DIRECTORY</span>
-                <span class="loading-dots">•••</span>
-            </div>
-
+        <div class="welcome-note">
+            Public-service information directory • India
         </div>
 
     </div>
 
 </div>
-
 <!-- =========================================================
      TOP GOVERNMENT-STYLE INFORMATION BAR
 ========================================================= -->
