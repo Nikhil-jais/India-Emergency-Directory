@@ -2435,21 +2435,29 @@ async function initializeApp() {
    47. START APPLICATION
    ========================================================= */
 
-if (
-    document.readyState ===
-    "loading"
-) {
+if (document.readyState === "loading") {
 
     document.addEventListener(
         "DOMContentLoaded",
-        initializeApp
+        () => {
+
+            initializeApp();
+            initializeWelcomeExperience();
+
+        }
     );
 
 } else {
 
- // ==========================================
-// WELCOME EXPERIENCE
-// ==========================================
+    initializeApp();
+    initializeWelcomeExperience();
+
+}
+
+
+/* =========================================================
+   48. WELCOME EXPERIENCE
+   ========================================================= */
 
 function initializeWelcomeExperience() {
 
@@ -2460,34 +2468,38 @@ function initializeWelcomeExperience() {
         document.getElementById("welcomeEnter");
 
     if (!welcomeOverlay || !welcomeEnter) {
+        console.warn(
+            "Welcome overlay or Enter button not found."
+        );
         return;
     }
 
-    // Keep the welcome screen locked
-    document.body.classList.add("welcome-active");
+    document.body.classList.add(
+        "welcome-active"
+    );
 
-    welcomeEnter.addEventListener("click", function () {
+    welcomeEnter.addEventListener(
+        "click",
+        function () {
 
-        welcomeOverlay.classList.add("welcome-closing");
+            welcomeOverlay.classList.add(
+                "welcome-closing"
+            );
 
-        document.body.classList.remove("welcome-active");
+            document.body.classList.remove(
+                "welcome-active"
+            );
 
-        setTimeout(function () {
+            setTimeout(
+                function () {
 
-            welcomeOverlay.remove();
+                    welcomeOverlay.remove();
 
-        }, 550);
+                },
+                550
+            );
 
-    });
+        }
+    );
 
-}
-
-
-// ==========================================
-// START APPLICATION
-// ==========================================
-
-initializeApp();
-
-initializeWelcomeExperience();   
 }
